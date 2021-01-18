@@ -7,6 +7,141 @@
     <title>Opdracht 14: Mastermind</title>
 </head>
 <body>
+
+    <div class="gamebody">
+        <p>Choose your colours</p>
+        <button class="guess red" id="redguess" onclick="pickColour('red')"></button>
+        <button class="guess orange" id="orangeguess" onclick="pickColour('orange')"></button>
+        <button class="guess yellow" id="yellowguess" onclick="pickColour('yellow')"></button>
+        <button class="guess green" id="greenguess" onclick="pickColour('green')"></button>
+        <button class="guess blue" id="blueguess" onclick="pickColour('blue')"></button>
+        <button class="guess purple" id="purpleguess" onclick="pickColour('purple')"></button>
+        <table class="guesstable">
+            <tr>
+                <td class="guess" id="firstguess" onclick="clearElement(this)"></td>
+                <td class="guess" id="secondguess" onclick="clearElement(this)"></td>
+                <td class="guess" id="thirdguess" onclick="clearElement(this)"></td>
+                <td class="guess" id="fourthguess" onclick="clearElement(this)"></td>
+            </tr>
+        </table>
+        <br />
+        <button class="guess commit" onclick="commitChoice()">Commit choice</button>
+        <div id="commitError"></div>
+        <br />
+        <table class="gametable">
+            <tr>
+                <td class="round 1"></td>
+                <td class="round 1"></td>
+                <td class="round 1"></td>
+                <td class="round 1"></td>
+            </tr>
+            <tr>
+                <td class="round 2"></td>
+                <td class="round 2"></td>
+                <td class="round 2"></td>
+                <td class="round 2"></td>
+            </tr>            
+            <tr>
+                <td class="round 3"></td>
+                <td class="round 3"></td>
+                <td class="round 3"></td>
+                <td class="round 3"></td>
+            </tr>
+            <tr>
+                <td class="round 4"></td>
+                <td class="round 4"></td>
+                <td class="round 4"></td>
+                <td class="round 4"></td>
+            </tr>
+            <tr>
+                <td class="round 5"></td>
+                <td class="round 5"></td>
+                <td class="round 5"></td>
+                <td class="round 5"></td>
+            </tr>
+            <tr>
+                <td class="round 6"></td>
+                <td class="round 6"></td>
+                <td class="round 6"></td>
+                <td class="round 6"></td>
+            </tr>
+            <tr>
+                <td class="round 7"></td>
+                <td class="round 7"></td>
+                <td class="round 7"></td>
+                <td class="round 7"></td>
+            </tr>
+            <tr>
+                <td class="round 8"></td>
+                <td class="round 8"></td>
+                <td class="round 8"></td>
+                <td class="round 8"></td>
+            </tr>
+            <tr>
+                <td class="round 9"></td>
+                <td class="round 9"></td>
+                <td class="round 9"></td>
+                <td class="round 9"></td>
+            </tr>
+            <tr>
+                <td class="round 10"></td>
+                <td class="round 10"></td>
+                <td class="round 10"></td>
+                <td class="round 10"></td>
+            </tr>
+            <tr>
+                <td class="round 11"></td>
+                <td class="round 11"></td>
+                <td class="round 11"></td>
+                <td class="round 11"></td>
+            </tr>
+            <tr>
+                <td class="round 12"></td>
+                <td class="round 12"></td>
+                <td class="round 12"></td>
+                <td class="round 12"></td>
+            </tr>
+        </table>
+
+        <table class="resulttable">
+            <tr class="result 1">
+                <td></td>
+            </tr>
+            <tr class="result 2">
+                <td></td>
+            </tr>
+            <tr class="result 3">
+                <td></td>
+            </tr>
+            <tr class="result 4">
+                <td></td>
+            </tr>
+            <tr class="result 5">
+                <td></td>
+            </tr>
+            <tr class="result 6">
+                <td></td>
+            </tr>
+            <tr class="result 7">
+                <td></td>
+            </tr>
+            <tr class="result 8">
+                <td></td>
+            </tr>
+            <tr class="result 9">
+                <td></td>
+            </tr>
+            <tr class="result 10">
+                <td></td>
+            </tr>
+            <tr class="result 11">
+                <td></td>
+            </tr>
+            <tr class="result 12">
+                <td></td>
+            </tr>
+        </table>
+    </div>
     
     <script src="script.js"></script>
 </body>

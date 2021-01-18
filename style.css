@@ -1,0 +1,69 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+div.gamebody {
+    padding: 20px 40px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table td {
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+}
+
+table.gametable {
+    display:inline-block;
+    flex: auto;
+}
+
+/* table.guesstable {
+    
+} */
+
+table.resulttable {
+    display: inline-block;
+    margin-left:40px;
+}
+
+button.guess {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+
+button.commit {
+    width: 160px;
+}
+
+button.red, td.red {
+    background-color: red;
+}
+
+button.orange, td.orange {
+    background-color: orange;
+}
+
+button.yellow, td.yellow {
+    background-color: yellow;
+}
+
+button.green, td.green {
+    background-color: green;
+}
+
+button.blue, td.blue {
+    background-color: blue;
+}
+
+button.purple, td.purple {
+    background-color: purple;
+}
+
+div#commitError {
+    height:15px;
+}
