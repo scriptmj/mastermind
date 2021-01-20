@@ -36,7 +36,7 @@ button.guess {
     display: inline-block;
 }
 
-button.commit {
+button.commit, button.start {
     width: 160px;
 }
 
@@ -66,4 +66,24 @@ button.purple, td.purple {
 
 div#commitError {
     height:15px;
+}
+
+.dot {
+    height:20px;
+    width:20px;
+    border-radius: 50%;
+    float:left;
+}
+
+.dot.red {
+    background-color: red;
+}
+
+.dot.grey {
+    background-color: grey;
+}
+
+#gameover {
+    /* display:none; */
+    font-size: 40px;
 }
